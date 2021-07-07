@@ -45,7 +45,7 @@
     "@stdlib/assert-is-boolean": "^0.0.x",
     "@stdlib/assert-is-error": "^0.0.x",
     "@stdlib/assert-is-plain-object": "^0.0.x",
-    "@stdlib/cli": "^0.0.x",
+    "@stdlib/cli-ctor": "^0.0.x",
     "@stdlib/fs-read-file": "^0.0.x",
     "@stdlib/streams-node-stdout": "^0.0.x",
     "@stdlib/types": "^0.0.x",
