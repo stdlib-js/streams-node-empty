@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/streams-node-empty",
-  "version": "0.0.6",
+  "version": "0.0.0",
   "description": "Create an empty readable stream.",
   "license": "Apache-2.0",
   "author": {
@@ -14,7 +14,7 @@
     }
   ],
   "bin": {
-    "constant-stream": "./bin/cli"
+    "empty-stream": "./bin/cli"
   },
   "main": "./lib",
   "directories": {
