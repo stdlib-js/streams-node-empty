@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/streams-node-empty",
-  "version": "0.0.7",
+  "version": "0.0.0",
   "description": "Create an empty readable stream.",
   "license": "Apache-2.0",
   "author": {
@@ -47,6 +47,7 @@
     "@stdlib/cli-ctor": "^0.0.x",
     "@stdlib/fs-read-file": "^0.0.x",
     "@stdlib/streams-node-stdout": "^0.0.x",
+    "@stdlib/string-format": "^0.0.x",
     "@stdlib/types": "^0.0.x",
     "@stdlib/utils-copy": "^0.0.x",
     "@stdlib/utils-define-nonenumerable-property": "^0.0.x",
