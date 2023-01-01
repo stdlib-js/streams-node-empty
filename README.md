@@ -24,38 +24,30 @@ limitations under the License.
 
 > Create an "empty" [readable stream][readable-stream].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/streams-node-empty
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-emptyStream = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-empty@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var emptyStream = require( 'path/to/vendor/umd/streams-node-empty/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-empty@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.emptyStream;
-})();
-</script>
+var emptyStream = require( '@stdlib/streams-node-empty' );
 ```
 
 <a name="empty-stream"></a>
@@ -153,14 +145,9 @@ stream.pipe( iStream );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-empty@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
+var emptyStream = require( '@stdlib/streams-node-empty' );
 
 function log( v ) {
     console.log( v.toString() );
@@ -177,11 +164,6 @@ opts = {
 var iStream = inspectStream( opts, log );
 
 stream.pipe( iStream );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -190,7 +172,68 @@ stream.pipe( iStream );
 
 <!-- Section for describing a command-line interface. -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use the module as a general utility, install the module globally
+
+```bash
+npm install -g @stdlib/streams-node-empty
+```
+
+</section>
+<!-- CLI usage documentation. -->
+
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: empty-stream [options]
+
+Options:
+
+  -h,  --help               Print this message.
+  -V,  --version            Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- CLI usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- CLI usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ empty-stream
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -232,7 +275,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -283,7 +326,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/streams/node/from-constant]: https://github.com/stdlib-js/streams-node-from-constant/tree/umd
+[@stdlib/streams/node/from-constant]: https://github.com/stdlib-js/streams-node-from-constant
 
 <!-- </related-links> -->
 
