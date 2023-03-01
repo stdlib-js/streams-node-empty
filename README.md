@@ -24,31 +24,20 @@ limitations under the License.
 
 > Create an "empty" [readable stream][readable-stream].
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/streams-node-empty
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
--   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var emptyStream = require( '@stdlib/streams-node-empty' );
+import emptyStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-empty@deno/mod.js';
+```
+
+You can also import the following named exports from the package:
+
+```javascript
+import { factory, objectMode } from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-empty@deno/mod.js';
 ```
 
 <a name="empty-stream"></a>
@@ -58,7 +47,7 @@ var emptyStream = require( '@stdlib/streams-node-empty' );
 Returns an "empty" [readable stream][readable-stream] (i.e., a [stream][stream] which never streams any values).
 
 ```javascript
-var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
+import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
 
 function log( chunk ) {
     // This function should never be called...
@@ -112,7 +101,7 @@ The method accepts the same `options` as [`emptyStream()`](#empty-stream).
 This method is a convenience function to create "empty" [streams][stream] which **always** operate in [objectMode][object-mode].
 
 ```javascript
-var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
+import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
 
 function log( v ) {
     console.log( v );
@@ -147,8 +136,8 @@ stream.pipe( iStream );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
-var emptyStream = require( '@stdlib/streams-node-empty' );
+import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
+import emptyStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-empty@deno/mod.js';
 
 function log( v ) {
     console.log( v.toString() );
@@ -173,68 +162,7 @@ stream.pipe( iStream );
 
 <!-- Section for describing a command-line interface. -->
 
-* * *
 
-<section class="cli">
-
-## CLI
-
-<section class="installation">
-
-## Installation
-
-To use as a general utility, install the CLI package globally
-
-```bash
-npm install -g @stdlib/streams-node-empty-cli
-```
-
-</section>
-<!-- CLI usage documentation. -->
-
-
-<section class="usage">
-
-### Usage
-
-```text
-Usage: empty-stream [options]
-
-Options:
-
-  -h,  --help               Print this message.
-  -V,  --version            Print the package version.
-```
-
-</section>
-
-<!-- /.usage -->
-
-<!-- CLI usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="notes">
-
-</section>
-
-<!-- /.notes -->
-
-<!-- CLI usage examples. -->
-
-<section class="examples">
-
-### Examples
-
-```bash
-$ empty-stream
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -259,7 +187,7 @@ $ empty-stream
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -331,7 +259,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/streams/node/from-constant]: https://github.com/stdlib-js/streams-node-from-constant
+[@stdlib/streams/node/from-constant]: https://github.com/stdlib-js/streams-node-from-constant/tree/deno
 
 <!-- </related-links> -->
 
