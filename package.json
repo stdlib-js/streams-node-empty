@@ -48,7 +48,7 @@
     "@stdlib/fs-read-file": "^0.0.8",
     "@stdlib/object-assign": "github:stdlib-js/object-assign#main",
     "@stdlib/streams-node-stdout": "^0.0.7",
-    "@stdlib/string-format": "^0.0.3",
+    "@stdlib/error-tools-fmtprodmsg": "^0.0.2",
     "@stdlib/types": "^0.0.14",
     "@stdlib/utils-define-nonenumerable-property": "^0.0.7",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.0.7",
