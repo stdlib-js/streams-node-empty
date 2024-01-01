@@ -21,7 +21,7 @@
 // MODULES //
 
 var Readable = require( 'readable-stream' ).Readable;
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var pkg = require( './../package.json' ).name;
 var emptyStream = require( './../lib' );
 
