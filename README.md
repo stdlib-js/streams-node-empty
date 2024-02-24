@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import emptyStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-empty@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/streams-node-empty/tags). For example,
+
+```javascript
 import emptyStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-empty@v0.2.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory, objectMode } from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-empty@v0.2.1-deno/mod.js';
+import { factory, objectMode } from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-empty@deno/mod.js';
 ```
 
 <a name="empty-stream"></a>
@@ -148,7 +153,7 @@ stream.pipe( iStream );
 
 ```javascript
 import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
-import emptyStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-empty@v0.2.1-deno/mod.js';
+import emptyStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-empty@deno/mod.js';
 
 function log( v ) {
     console.log( v.toString() );
