@@ -1,9 +1,36 @@
 {
   "name": "@stdlib/streams-node-empty",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Create an empty readable stream.",
   "license": "Apache-2.0",
-  "main": "./index.js",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "bin": {
+    "empty-stream": "./bin/cli"
+  },
+  "main": "./lib",
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {
+    "test": "make test",
+    "test-cov": "make test-cov",
+    "examples": "make examples",
+    "benchmark": "make benchmark"
+  },
   "homepage": "https://stdlib.io",
   "repository": {
     "type": "git",
@@ -12,6 +39,49 @@
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
+  "dependencies": {
+    "@stdlib/assert-has-own-property": "^0.2.1",
+    "@stdlib/assert-is-boolean": "^0.2.1",
+    "@stdlib/assert-is-error": "^0.2.1",
+    "@stdlib/assert-is-plain-object": "^0.2.1",
+    "@stdlib/cli-ctor": "^0.2.1",
+    "@stdlib/fs-read-file": "^0.2.1",
+    "@stdlib/object-assign": "^0.2.1",
+    "@stdlib/streams-node-stdout": "^0.2.1",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.1",
+    "@stdlib/types": "^0.3.2",
+    "@stdlib/utils-define-nonenumerable-property": "^0.2.1",
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.1",
+    "@stdlib/utils-inherit": "^0.2.1",
+    "@stdlib/utils-next-tick": "^0.2.1",
+    "debug": "^2.6.9",
+    "readable-stream": "^2.1.4"
+  },
+  "devDependencies": {
+    "@stdlib/assert-is-browser": "^0.2.1",
+    "@stdlib/assert-is-windows": "^0.2.1",
+    "@stdlib/process-exec-path": "^0.2.1",
+    "@stdlib/streams-node-inspect-sink": "^0.2.0",
+    "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
+    "istanbul": "^0.4.1",
+    "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
+    "@stdlib/bench-harness": "^0.2.0"
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
   "keywords": [
     "stdlib",
     "utilities",
