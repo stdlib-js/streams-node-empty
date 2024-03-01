@@ -55,17 +55,18 @@
     "@stdlib/utils-inherit": "^0.2.1",
     "@stdlib/utils-next-tick": "^0.2.1",
     "debug": "^2.6.9",
-    "readable-stream": "^2.1.4"
+    "readable-stream": "^2.1.4",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.1"
   },
   "devDependencies": {
     "@stdlib/assert-is-browser": "^0.2.1",
     "@stdlib/assert-is-windows": "^0.2.1",
     "@stdlib/process-exec-path": "^0.2.1",
-    "@stdlib/streams-node-inspect-sink": "^0.2.0",
+    "@stdlib/streams-node-inspect-sink": "^0.2.1",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.0"
+    "@stdlib/bench-harness": "^0.2.1"
   },
   "engines": {
     "node": ">=0.10.0",
