@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import emptyStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-empty@esm/index.mjs';
+import emptyStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-empty@v0.2.2-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory, objectMode } from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-empty@esm/index.mjs';
+import { factory, objectMode } from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-empty@v0.2.2-esm/index.mjs';
 ```
 
 <a name="empty-stream"></a>
@@ -153,7 +153,7 @@ stream.pipe( iStream );
 <script type="module">
 
 import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@esm/index.mjs';
-import emptyStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-empty@esm/index.mjs';
+import emptyStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-empty@v0.2.2-esm/index.mjs';
 
 function log( v ) {
     console.log( v.toString() );
