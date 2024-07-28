@@ -48,7 +48,7 @@
     "@stdlib/fs-read-file": "^0.2.2",
     "@stdlib/object-assign": "^0.2.1",
     "@stdlib/streams-node-stdout": "^0.2.2",
-    "@stdlib/string-format": "^0.2.2",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2",
     "@stdlib/types": "^0.3.2",
     "@stdlib/utils-define-nonenumerable-property": "^0.2.2",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2",
