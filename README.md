@@ -35,162 +35,21 @@ limitations under the License.
 
 > Create an "empty" [readable stream][readable-stream].
 
-<section class="installation">
 
-## Installation
 
-```bash
-npm install @stdlib/streams-node-empty
-```
 
-Alternatively,
 
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
--   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
 
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
 
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
 
-</section>
-
-<section class="usage">
-
-## Usage
-
-```javascript
-var emptyStream = require( '@stdlib/streams-node-empty' );
-```
-
-<a name="empty-stream"></a>
-
-#### emptyStream( \[options] )
-
-Returns an "empty" [readable stream][readable-stream] (i.e., a [stream][stream] which never streams any values).
-
-```javascript
-var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
-
-function log( chunk ) {
-    // This function should never be called...
-    console.log( chunk.toString() );
-}
-
-var stream = emptyStream();
-var iStream = inspectStream( log );
-
-stream.pipe( iStream );
-```
-
-The function accepts the following `options`:
-
--   **objectMode**: specifies whether a [stream][stream] should operate in [objectMode][object-mode]. Default: `false`.
-
-To set [stream][stream] `options`,
-
-```javascript
-var opts = {
-    'objectMode': true
-};
-
-var stream = emptyStream( opts );
-```
-
-* * *
-
-#### emptyStream.factory( \[options] )
-
-Returns a `function` for creating "empty" [readable streams][readable-stream].
-
-```javascript
-var opts = {
-    'objectMode': true
-};
-
-var createStream = emptyStream.factory( opts );
-
-var stream1 = createStream();
-var stream2 = createStream();
-// ...
-```
-
-The method accepts the same `options` as [`emptyStream()`](#empty-stream).
-
-* * *
-
-#### emptyStream.objectMode()
-
-This method is a convenience function to create "empty" [streams][stream] which **always** operate in [objectMode][object-mode].
-
-```javascript
-var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
-
-function log( v ) {
-    console.log( v );
-}
-
-var stream = emptyStream.objectMode();
-
-var opts = {
-    'objectMode': true
-};
-var iStream = inspectStream( opts, log );
-
-stream.pipe( iStream );
-```
-
-</section>
-
-<!-- /.usage -->
-
-<section class="notes">
-
-</section>
-
-<!-- /.notes -->
-
-* * *
-
-<section class="examples">
-
-## Examples
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
-var emptyStream = require( '@stdlib/streams-node-empty' );
-
-function log( v ) {
-    console.log( v.toString() );
-}
-
-var opts = {
-    'objectMode': true
-};
-var stream = emptyStream( opts );
-
-opts = {
-    'objectMode': true
-};
-var iStream = inspectStream( opts, log );
-
-stream.pipe( iStream );
-```
-
-</section>
-
-<!-- /.examples -->
 
 <!-- Section for describing a command-line interface. -->
 
-* * *
+
 
 <section class="cli">
 
-## CLI
+
 
 <section class="installation">
 
@@ -208,7 +67,7 @@ npm install -g @stdlib/streams-node-empty-cli
 
 <section class="usage">
 
-### Usage
+## Usage
 
 ```text
 Usage: empty-stream [options]
@@ -235,7 +94,7 @@ Options:
 
 <section class="examples">
 
-### Examples
+## Examples
 
 ```bash
 $ empty-stream
@@ -253,10 +112,9 @@ $ empty-stream
 
 <section class="related">
 
-* * *
-
 ## See Also
 
+-   <span class="package-name">[`@stdlib/streams-node-empty`][@stdlib/streams-node-empty]</span><span class="delimiter">: </span><span class="description">create an empty readable stream.</span>
 -   <span class="package-name">[`@stdlib/streams-node/from-constant`][@stdlib/streams/node/from-constant]</span><span class="delimiter">: </span><span class="description">create a readable stream which always streams the same value.</span>
 
 </section>
@@ -276,7 +134,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-#### Community
+### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -299,8 +157,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/streams-node-empty.svg
-[npm-url]: https://npmjs.org/package/@stdlib/streams-node-empty
+[npm-image]: http://img.shields.io/npm/v/@stdlib/streams-node-empty-cli.svg
+[npm-url]: https://npmjs.org/package/@stdlib/streams-node-empty-cli
 
 [test-image]: https://github.com/stdlib-js/streams-node-empty/actions/workflows/test.yml/badge.svg?branch=v0.2.2
 [test-url]: https://github.com/stdlib-js/streams-node-empty/actions/workflows/test.yml?query=branch:v0.2.2
