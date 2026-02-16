@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /// <reference types="node"/>
-/// <reference types="@stdlib/types"/>
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
 import { Readable } from 'stream';
 
