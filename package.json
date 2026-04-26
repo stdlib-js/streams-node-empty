@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/streams-node-empty-cli",
+  "name": "@stdlib/streams-node-empty",
   "version": "0.2.3",
   "description": "Create an empty readable stream.",
   "license": "Apache-2.0",
@@ -16,6 +16,21 @@
   "bin": {
     "empty-stream": "./bin/cli"
   },
+  "main": "./lib",
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {
+    "test": "make test",
+    "test-cov": "make test-cov",
+    "examples": "make examples",
+    "benchmark": "make benchmark"
+  },
   "homepage": "https://stdlib.io",
   "repository": {
     "type": "git",
@@ -25,19 +40,49 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
+    "@stdlib/assert-has-own-property": "^0.2.3",
+    "@stdlib/assert-is-boolean": "^0.2.3",
+    "@stdlib/assert-is-error": "^0.2.3",
+    "@stdlib/assert-is-plain-object": "^0.2.3",
     "@stdlib/cli-ctor": "^0.2.3",
     "@stdlib/fs-read-file": "^0.2.3",
+    "@stdlib/object-assign": "^0.2.3",
     "@stdlib/streams-node-stdout": "^0.2.3",
-    "@stdlib/streams-node-empty": "0.2.3"
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.3",
+    "@stdlib/types": "^0.4.3",
+    "@stdlib/utils-define-nonenumerable-property": "^0.2.3",
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.3",
+    "@stdlib/utils-inherit": "^0.2.3",
+    "@stdlib/utils-next-tick": "^0.2.3",
+    "debug": "^2.6.9",
+    "readable-stream": "^2.1.4",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/assert-is-browser": "^0.2.3",
     "@stdlib/assert-is-windows": "^0.2.3",
     "@stdlib/process-exec-path": "^0.2.3",
+    "@stdlib/streams-node-inspect-sink": "^0.2.3",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
-    "tap-min": "git+https://github.com/Planeshifter/tap-min.git"
+    "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
+    "@stdlib/bench-harness": "^0.2.3"
   },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
   "keywords": [
     "stdlib",
     "utilities",
