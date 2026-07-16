@@ -1,4 +1,4 @@
-"use strict";var i=function(r,e){return function(){return e||r((e={exports:{}}).exports,e),e.exports}};var u=i(function(Q,w){w.exports={objectMode:!1}});var l=i(function(W,c){
+"use strict";var i=function(r,e){return function(){try{return e||r((e={exports:{}}).exports,e),e.exports}catch(t){throw (e=0, t)}};};var u=i(function(Q,w){w.exports={objectMode:!1}});var l=i(function(W,c){
 var E=require('@stdlib/assert-is-plain-object/dist'),M=require('@stdlib/assert-has-own-property/dist'),O=require('@stdlib/assert-is-boolean/dist').isPrimitive,d=require('@stdlib/error-tools-fmtprodmsg/dist');function S(r,e){return E(e)?M(e,"objectMode")&&(r.objectMode=e.objectMode,!O(r.objectMode))?new TypeError(d('1M72o',"objectMode",r.objectMode)):null:new TypeError(d('1M72V',e));}c.exports=S
 });var m=i(function(X,v){
 var x=require("debug"),T=x("empty-stream");v.exports=T
