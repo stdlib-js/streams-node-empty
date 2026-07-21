@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-16)
+## Unreleased (2026-07-21)
 
 <section class="commits">
 
