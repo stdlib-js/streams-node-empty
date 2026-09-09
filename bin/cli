@@ -26,7 +26,7 @@ var resolve = require( 'path' ).resolve;
 var readFileSync = require( '@stdlib/fs-read-file' ).sync;
 var CLI = require( '@stdlib/cli-ctor' );
 var stdout = require( '@stdlib/streams-node-stdout' );
-var emptyStream = require( './../lib' );
+var emptyStream = require( '@stdlib/streams-node-empty' );
 
 
 // MAIN //
